@@ -1,0 +1,13 @@
+{% for e in empleados %}
+    <tr>
+        <td>{{e.id_empleado}}</td>
+        <td>{{e.nombre}} {{e.paterno}} {{e.materno}}</td>
+        <td>{{e.nacimiento_str}}</td>
+        <td>{{e.domicilio}}</td>
+        <td>{{e.genero_completo}}</td>
+        <td>
+            <button class="btn btn-sm btn-outline-warning" type="button">Editar</button>
+            <button class="btn btn-sm btn-outline-danger"  type="button">Eliminar</button>
+        </td>
+    </tr>
+{% endfor %}
